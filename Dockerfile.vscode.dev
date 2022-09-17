@@ -1,0 +1,9 @@
+FROM ubuntu@sha256:d5c260797a173fe5852953656a15a9e58ba14c5306c175305b3a05e0303416db
+
+RUN apt-get update
+RUN apt-get install -y --no-install-recommends \
+    cmake \
+    build-essential \
+    zlib1g-dev \
+    libcgal-dev \ 
+    gdb
